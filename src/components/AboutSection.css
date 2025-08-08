@@ -1,0 +1,175 @@
+.about-section {
+  padding: 80px 20px;
+  background: linear-gradient(180deg, #f8f8f8 0%, #ffffff 100%);
+}
+
+.about-container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* Row 1: About + Image */
+.about-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+/* About Content */
+.about-content h2 {
+  font-size: 36px;
+  color: #14532d;
+  margin-bottom: 16px;
+}
+
+.about-content p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+.about-content .intro-text {
+  font-size: 18px;
+  color: #444;
+  font-weight: 500;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin: 20px 0;
+}
+
+.feature-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #444;
+}
+
+.feature-icon {
+  color: #2e7d32;
+}
+
+.whatsapp-btn {
+  padding: 12px 20px;
+  background-color: #25d366;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.whatsapp-btn:hover {
+  background-color: #1eb855;
+  transform: scale(1.05);
+  box-shadow: 0px 4px 12px rgba(37, 211, 102, 0.4);
+}
+
+/* Image Section */
+.about-image {
+  position: relative;
+}
+
+.about-image img {
+  width: 100%;
+  height: 340px;
+  object-fit: cover;
+  border-radius: 14px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.4s ease;
+}
+
+.about-image:hover img {
+  transform: scale(1.03);
+}
+
+.image-tag {
+  position: absolute;
+  bottom: -15px;
+  right: -15px;
+  background: white;
+  padding: 12px 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.image-tag .tag-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #2e7d32;
+}
+
+.image-tag .tag-sub {
+  font-size: 14px;
+  color: #555;
+}
+
+/* Bento Card Grid */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.stat-card {
+  background: white;
+  padding: 24px;
+  text-align: center;
+  border-radius: 14px;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.stat-card h3 {
+  font-size: 22px;
+  font-weight: bold;
+  color: #2e7d32;
+  margin: 5px 0;
+}
+
+.stat-card p {
+  font-size: 14px;
+  color: #666;
+}
+
+.stat-icon {
+  font-size: 28px;
+  color: #2e7d32;
+  margin-bottom: 6px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .about-row {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 500px) {
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+}
