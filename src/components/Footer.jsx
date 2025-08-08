@@ -3,7 +3,7 @@ import "./Footer.css";
 
 const Footer = () => {
   return (
-    <footer className="footer" role="contentinfo">
+    <footer className="footer">
       <div className="footer-container">
         <div className="footer-grid">
           
@@ -12,9 +12,8 @@ const Footer = () => {
             <div className="footer-logo">
               <img
                 src="/images/logo.png"
-                alt="Door In Interio logo"
+                alt="Door In Interio Logo"
                 className="footer-logo-img"
-                loading="lazy"
               />
               <div>
                 <h3>DOOR IN INTERIO</h3>
@@ -67,11 +66,11 @@ const Footer = () => {
               </div>
               <div className="contact-item phone">
                 <FaPhone className="contact-icon" />
-                <p><a href="tel:+919408715115">+91 9408715115</a></p>
+                <p>+91 9408715115</p>
               </div>
               <div className="contact-item email">
                 <FaEnvelope className="contact-icon" />
-                <p><a href="mailto:info@doorininterio.com">info@doorininterio.com</a></p>
+                <p>info@doorininterio.com</p>
               </div>
             </div>
 
@@ -79,9 +78,9 @@ const Footer = () => {
             <div className="social-media">
               <h5>Follow Us</h5>
               <div className="social-icons">
-                <a aria-label="Facebook" href="https://www.facebook.com/" target="_blank" rel="noopener"><FaFacebook /></a>
-                <a aria-label="Instagram" href="https://www.instagram.com/" target="_blank" rel="noopener"><FaInstagram /></a>
-                <a aria-label="Twitter" href="https://x.com/" target="_blank" rel="noopener"><FaTwitter /></a>
+                <a href="#"><FaFacebook /></a>
+                <a href="#"><FaInstagram /></a>
+                <a href="#"><FaTwitter /></a>
               </div>
             </div>
           </div>

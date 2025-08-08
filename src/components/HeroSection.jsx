@@ -14,16 +14,16 @@ const HeroSection = () => {
     window.open("https://maps.app.goo.gl/wauN5ey33toCXubs6", "_blank");
   };
   return (
-    <section id="home" className="hero-section" aria-labelledby="hero-heading">
+    <section id="home" className="hero-section">
       <div className="container">
         <div className="grid">
           {/* Left Content */}
           <div className="text-content">
 
 
-            <h1 id="hero-heading" className="title">
+            <h2 className="title">
               Transform Your Space with <span>Door In Interio</span>
-            </h1>
+            </h2>
 
             <p className="description">
               Your one-stop destination for premium plywood, veneer, hardware,
@@ -61,9 +61,7 @@ const HeroSection = () => {
             <div className="image-card">
               <img
                 src="/images/hero-image.png"
-                alt="Premium interior materials on display at Door In Interio"
-                loading="eager"
-                fetchpriority="high"
+                alt="Premium Interior Materials Display"
               />
               <div className="image-badge">
                 <p className="bold">Visit Us</p>

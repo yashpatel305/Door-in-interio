@@ -37,10 +37,10 @@ const images = [
 
 function Gallery() {
   return (
-    <section className="gallery-section" id="gallery" aria-labelledby="gallery-heading">
+    <section className="gallery-section" id="gallery">
       <div className="gallery-container">
         <div className="gallery-title">
-          <h2 id="gallery-heading">Our Portfolio</h2>
+          <h2>Our Portfolio</h2>
           <p>
             Explore our collection of beautiful homes and interiors we've
             designed for families across Gujarat.
@@ -49,7 +49,7 @@ function Gallery() {
         <div className="gallery-grid">
           {images.map((image, index) => (
             <div key={index} className="gallery-item">
-              <img src={image.url} alt={image.title} loading="lazy" />
+              <img src={image.url} alt={image.title} />
               <div className="overlay">
                 <div className="overlay-text">
                   <h4>{image.title}</h4>

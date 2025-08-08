@@ -3,11 +3,11 @@ import "./Contact.css";
 
 const Contact = () => {
   return (
-    <section className="contact-section" id="contact" aria-labelledby="contact-heading">
+    <section className="contact-section" id="contact">
       <div className="contact-container">
         {/* Header */}
         <div className="contact-header">
-          <h2 id="contact-heading">Visit Our Store</h2>
+          <h2>Visit Our Store</h2>
           <p>
             Come explore Gandhinagar's newest interior supply destination. WhatsApp us or visit our showroom in Kudasan!
           </p>
@@ -40,7 +40,7 @@ const Contact = () => {
                 </div>
                 <div className="info-content">
                   <h4>WhatsApp Business</h4>
-                  <p className="highlight"><a href="https://wa.me/919408715115" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">+91 9408715115</a></p>
+                  <p className="highlight">+91 9408715115</p>
                   <p className="note">Message us anytime!</p>
                 </div>
               </div>
@@ -51,8 +51,8 @@ const Contact = () => {
                 </div>
                 <div className="info-content">
                   <h4>Email</h4>
-                  <p><a href="mailto:doorininterio.rj@gmail.com">doorininterio.rj@gmail.com</a></p>
-                  <p><a href="https://doorin.in" target="_blank" rel="noopener">www.doorin.in</a></p>
+                  <p>doorininterio.rj@gmail.com</p>
+                  <p>www.doorin.in</p>
                 </div>
               </div>
 
