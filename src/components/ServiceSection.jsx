@@ -48,10 +48,10 @@ const ServiceSection = () => {
   ];
 
   return (
-    <section id="services" className="services-section">
+    <section id="services" className="services-section" aria-labelledby="services-heading">
       <div className="services-container">
         <div className="services-title">
-          <h2>Our Premium Products</h2>
+          <h2 id="services-heading">Our Premium Products</h2>
           <p>
             Discover our extensive range of premium interior materials and
             supplies. Perfect for homeowners and contractors looking for quality
@@ -63,7 +63,7 @@ const ServiceSection = () => {
           {services.map((service, index) => (
             <div key={index} className="service-card">
               <div className="service-card-header">
-                <div className="service-icon">
+                <div className="service-icon" aria-hidden="true">
                   <service.icon size={24} />
                 </div>
                 <h3>{service.title}</h3>

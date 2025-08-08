@@ -21,12 +21,12 @@ const AboutSection = () => {
   ];
 
   return (
-    <section className="about-section" id="about">
+    <section className="about-section" id="about" aria-labelledby="about-heading">
       <div className="about-container">
         <div className="about-row">
         {/* About Text */}
         <div className="about-content">
-          <h2>Welcome to Door In Interio</h2>
+          <h2 id="about-heading">Welcome to Door In Interio</h2>
           <p className="intro-text">
             Gandhinagar's newest premium interior supply destination! We've just
             opened our doors in Kudasan to serve homeowners and contractors with
@@ -53,7 +53,8 @@ const AboutSection = () => {
         <div className="about-image">
           <img
             src="/images/about.avif"
-            alt="Store"
+            alt="Door In Interio showroom in Gandhinagar"
+            loading="lazy"
           />
           <div className="image-tag">
             <p className="tag-title">Gandhinagar's</p>

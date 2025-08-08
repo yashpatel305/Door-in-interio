@@ -31,7 +31,7 @@ const Navbar = () => {
   return (
     <>
       {/* Top Info Line */}
-      <header className="firstLine">
+      <header className="firstLine" role="banner">
         <div className="detail">
           <p onClick={handleCall}>
             <LuPhone /> +91 7414933099
@@ -44,11 +44,11 @@ const Navbar = () => {
       </header>
 
       {/* Sticky Navbar */}
-      <nav className="navbar">
+      <nav className="navbar" role="navigation" aria-label="Primary">
         <div className="logoName">
-          <img src="/images/logo.png" alt="Logo" />
+          <img src="/images/logo.png" alt="Door In Interio logo" loading="eager" fetchpriority="high" />
           <div className="name">
-            <h1>Door In Interio</h1>
+            <p className="sr-only">Door In Interio</p>
             <p>Build Your Dream Home</p>
           </div>
         </div>
@@ -58,19 +58,19 @@ const Navbar = () => {
         </div>
 
         <div className={`navbarItem ${menuOpen ? "open" : ""}`}>
-          <a href="#home" onClick={closeMenu}>
+          <a href="#home" onClick={closeMenu} aria-label="Go to Home section">
             Home
           </a>
-          <a href="#services" onClick={closeMenu}>
+          <a href="#services" onClick={closeMenu} aria-label="Go to Services section">
             Services
           </a>
-          <a href="#about" onClick={closeMenu}>
+          <a href="#about" onClick={closeMenu} aria-label="Go to About section">
             About
           </a>
-          <a href="#gallery" onClick={closeMenu}>
+          <a href="#gallery" onClick={closeMenu} aria-label="Go to Gallery section">
             Gallery
           </a>
-          <a href="#contact" onClick={closeMenu}>
+          <a href="#contact" onClick={closeMenu} aria-label="Go to Contact section">
             Contact
           </a>
           <button onClick={handleWhatsApp}>Contact Us</button>
