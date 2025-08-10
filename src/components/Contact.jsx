@@ -40,6 +40,7 @@ const Contact = () => {
                 </div>
                 <div className="info-content">
                   <h4>WhatsApp Business</h4>
+                  <p className="highlight">+91 7414933099</p>
                   <p className="highlight">+91 9408715115</p>
                   <p className="note">Message us anytime!</p>
                 </div>

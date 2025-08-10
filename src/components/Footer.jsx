@@ -66,23 +66,22 @@ const Footer = () => {
               </div>
               <div className="contact-item phone">
                 <FaPhone className="contact-icon" />
-                <p>+91 9408715115</p>
+                <p>+91 9408715115 <br /> +91 7414933099</p>
               </div>
               <div className="contact-item email">
                 <FaEnvelope className="contact-icon" />
-                <p>info@doorininterio.com</p>
+                <p>doorininterio.rj@gmail.com</p>
               </div>
             </div>
 
             {/* Social Media */}
-            <div className="social-media">
+            {/* <div className="social-media">
               <h5>Follow Us</h5>
               <div className="social-icons">
                 <a href="#"><FaFacebook /></a>
                 <a href="#"><FaInstagram /></a>
-                <a href="#"><FaTwitter /></a>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
 
